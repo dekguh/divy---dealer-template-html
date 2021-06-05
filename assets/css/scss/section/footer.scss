@@ -1,0 +1,27 @@
+.footer-wrapper {
+    background-color: $color-black-primary;
+}
+
+.footer-inner {
+    padding: 50px 0 20px 0;
+}
+
+.footer-title {
+    color: $color-white;
+}
+
+.footer-copyright {
+    background-color: $color-black-primary;
+    padding: 15px 0;
+    border-top: 1px solid $color-white;
+
+    a {
+        color: $color-white;
+        font-weight: 500;
+
+        &:hover {
+            color: $color-white;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.table-custom {
+    thead {
+        @extend %bg-color-primary;
+        color: $color-white;
+        border: 1px solid;
+        @extend %border-color-primary;
+
+        tr {
+            th {
+                border-bottom: none;
+            }
+        }
+    }
+
+    tbody {
+        border: 1px solid $color-gray-primary;
+
+        tr {
+            td {
+                border-top: 1px solid $color-gray-primary;
+            }
+        }
+    }
+}

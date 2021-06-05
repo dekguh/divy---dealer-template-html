@@ -1,0 +1,189 @@
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    box-shadow: none;
+    transition: .6s;
+
+    .icon {
+        margin-right: 8px;
+    }
+
+    &.button-primary {
+        text-decoration: none;
+        @extend %bg-color-primary;
+        color: $color-white;
+        @extend %bg-color-secondary-hover;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &.button-primary-outline {
+        text-decoration: none;
+        @extend %border-color-primary;
+        @extend %font-color-primary;
+        @extend %border-color-secondary-hover;
+        background-color: transparent;
+
+        &:hover {
+            @extend %font-color-secondary;
+            background-color: transparent;
+        }
+    }
+
+    &.button-white-outline {
+        text-decoration: none;
+        border-color: $color-white;
+        color: $color-white;
+        background-color: transparent;
+
+        &:hover {
+            border-color: $color-gray-primary;
+            color: $color-gray-primary;
+            background-color: transparent;
+        }
+    }
+
+    &.button-facebook {
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-facebook;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &.button-twitter {
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-twitter;
+
+        &:hover {
+            color: $color-white;
+        }
+    }
+
+    &.button-whatsapp {
+        text-decoration: none;
+        color: $color-white;
+        background-color: $color-green-primary;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-green-secondary;
+        }
+    }
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0 0 4px 0;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    box-shadow: none;
+    transition: .6s;
+
+    &.primary {
+        text-decoration: none;
+        @extend %font-color-primary;
+        @extend %border-bottom-color-primary;
+        @extend %border-bottom-color-secondary-hover;
+        @extend %font-color-secondary-hover;
+    }
+}
+
+.owl-carousel {
+    .owl-nav {
+        margin-top: 20px;
+
+        button {
+            &.owl-next {
+                @extend %font-color-primary;
+                padding: 5px 15px !important;
+                border: 1px solid;
+                border-radius: 0;
+                @extend %border-color-primary;
+                transition: .6s;
+
+                &:hover {
+                    @extend %bg-color-primary;
+                }
+            }
+
+            &.owl-prev {
+                @extend %font-color-primary;
+                padding: 5px 15px !important;
+                border: 1px solid;
+                border-radius: 0;
+                @extend %border-color-primary;
+                transition: .6s;
+
+                &:hover {
+                    @extend %bg-color-primary;
+                }
+            }
+        }
+    }
+}
+
+.pagination-custom {
+    display: flex;
+    flex-flow: row nowrap;
+
+    .prev {
+        flex: 1 1 auto;
+    }
+
+    .next {
+        flex: 1 1 auto;
+    }
+
+    a {
+        display: inline-block;
+        padding: 8px 15px;
+        text-decoration: none;
+        border: 1px solid transparent;
+        @extend %border-color-primary;
+        @extend %font-color-primary;
+        @extend %border-color-secondary-hover;
+        background-color: transparent;
+
+        &:hover {
+            @extend %font-color-secondary;
+            background-color: transparent;
+        }
+    }
+}
+
+.button-share {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    color: $color-white;
+    transition: .6s;
+
+    &.facebook {
+        background-color: $color-facebook;
+
+        &:hover {
+            background-color: $color-facebook;
+            color: $color-white;
+        }
+    }
+
+    &.twitter {
+        background-color: $color-twitter;
+
+        &:hover {
+            background-color: $color-twitter;
+            color: $color-white;
+        }
+    }
+}

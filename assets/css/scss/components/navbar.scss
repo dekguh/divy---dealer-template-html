@@ -1,0 +1,237 @@
+.navbar-custom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    .navbar-logo-link {
+        .navbar-logo {
+            width: 80px;
+        }
+    }
+
+    .navbar-nav {
+        margin: 0 auto;
+    }
+
+    .nav-item {
+        &.active {
+            .nav-link {
+                color: $color-gray-secondary;
+            }
+        }
+    }
+
+    .nav-link {
+        padding: 10px 10px !important;
+        color: $color-white;
+
+        &:hover {
+            color: $color-gray-secondary;
+        }
+    }
+
+    .navbar-phone {
+        .phone-number {
+            display: inline-block;
+            padding: 10px 15px;
+            border: 1px solid $color-white;
+            color: $color-white;
+        }
+    }
+
+    .dropdown-menu {
+        border-radius: 0;
+        border-color: $color-gray-secondary;
+        padding: 0;
+
+        .dropdown-item {
+            border-bottom: 1px solid $color-gray-secondary;
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            &:hover {
+                background-color: $color-red-primary;
+                color: $color-white;
+            }
+        }
+    }
+}
+
+.navbar-button {
+    display: none;
+    height: 32px;
+}
+
+.navbar-open {
+    border: 1px solid $color-white;
+    background-color: transparent;
+    position: relative;
+    height: 32px;
+    width: 37px;
+
+    .block-bar {
+        position: absolute;
+        right: 4px;
+        height: 2px;
+        background-color: $color-gray-secondary;
+        transition: .6s;
+
+        &.block-1 {
+            top: 5px;
+            width: 27px;
+        }
+
+        &.block-2 {
+            top: 11px;
+            width: 23px;
+        }
+
+        &.block-3 {
+            top: 17px;
+            width: 19px;
+        }
+
+        &.block-4 {
+            top: 23px;
+            width: 26px;
+        }
+    }
+
+    &:hover {
+        .block-bar {
+            &.block-1 {
+                width: 23px;
+            }
+
+            &.block-2 {
+                width: 27px;
+            }
+
+            &.block-3 {
+                width: 26px;
+            }
+
+            &.block-4 {
+                width: 19px;
+            }
+        }
+    }
+}
+
+.navbar-header {
+    display: none;
+    padding: 20px;
+    border-bottom: 1px solid $color-gray-secondary;
+    text-align: center;
+
+    .navbar-header-logo {
+        width: 80px;
+        margin-bottom: 4px;
+    }
+
+    .navbar-description {
+        display: block;
+        font-size: $size-xs;
+    }
+}
+
+.navbar-footer {
+    display: none;
+    padding: 20px;
+
+    .navbar-footer-content {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        .title {
+            margin-bottom: 4px;
+        }
+    }
+}
+
+.navbar-close-wrap {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    .navbar-close {
+        border: none;
+        background-color: transparent;
+        color: $color-red-primary;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-close-wrap {
+        display: block;
+    }
+
+    .navbar-phone {
+        display: none;
+    }
+
+    .navbar-button {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: block;
+        width: 280px;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: -280px;
+        bottom: 0;
+        overflow-y: hidden;
+        background-color: $color-white;
+    }
+
+    .navbar-custom {
+        .navbar-nav {
+            margin: 0 auto;
+            padding: 20px 0;
+            border-bottom: 1px solid $color-gray-secondary;
+        }
+
+        .nav-item {
+            &.active {
+                .nav-link {
+                    color: $color-black-primary;
+                }
+            }
+
+            &:last-child {
+                .nav-link {
+                    padding: 0 20px 0 20px !important;
+                }
+            }
+        }
+
+        .nav-link {
+            padding: 0 20px 8px 20px !important;
+            color: $color-black-secondary;
+
+            &:hover {
+                color: $color-black-primary;
+            }
+        }
+
+        .dropdown-menu {
+            margin: 0 25px;
+            border: none;
+        }
+    }
+
+    .navbar-header {
+        display: block;
+    }
+
+    .navbar-footer {
+        display: block;
+    }
+}

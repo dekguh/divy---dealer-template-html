@@ -1,0 +1,71 @@
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: $font-body;
+    font-size: $size-body;
+    color: $color-black-secondary;
+}
+
+p {
+    line-height: $line-height-body;
+}
+
+button {
+    line-height: 1.2;
+
+    &:focus {
+        box-shadow: none !important;
+        outline: none;
+    }
+}
+
+input {
+    line-height: 1.2;
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+%font-heading {
+    color: $color-heading;
+    font-weight: 700;
+    line-height: $line-height-heading;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: $size-h1;
+    @extend %font-heading;
+}
+
+h2 {
+    font-size: $size-h2;
+    @extend %font-heading;
+}
+
+h3 {
+    font-size: $size-h3;
+    @extend %font-heading;
+}
+
+h4 {
+    font-size: $size-h4;
+    @extend %font-heading;
+}
+
+h5 {
+    font-size: $size-h5;
+    @extend %font-heading;
+}
+
+h6 {
+    font-size: $size-h6;
+    @extend %font-heading;
+}
+
+a {
+    transition: .6s;
+}

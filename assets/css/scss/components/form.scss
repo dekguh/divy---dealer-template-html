@@ -1,0 +1,12 @@
+.form-custom {
+    height: auto;
+    padding: 12px 20px;
+    border-radius: 0;
+    border-color: $color-gray-secondary;
+    transition: .6s;
+    @extend %border-color-primary-focus;
+}
+
+.label-control {
+    color: $color-body;
+}

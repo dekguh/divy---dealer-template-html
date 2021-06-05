@@ -1,0 +1,70 @@
+/* bg color primary */
+%bg-color-primary {
+    background-color: $color-red-primary;
+}
+
+/* border color primary */
+%border-color-primary {
+    border-color: $color-red-primary;
+}
+
+/* border color primary focus */
+%border-color-primary-focus {
+    &:focus {
+        border-color: $color-red-primary;
+    }
+}
+
+/* font color primary */
+%font-color-primary {
+    color: $color-red-primary;
+}
+
+/* font color primary */
+%bg-color-secondary-transparent {
+    background-color: rgba($color: $color-red-secondary, $alpha: .75);
+}
+
+/* bg color secondary hover */
+%bg-color-secondary-hover {
+    &:hover {
+        background-color: $color-red-secondary;
+    }
+}
+
+/* border color secondary hover */
+%border-color-secondary-hover {
+    &:hover {
+        border-color: $color-red-secondary;
+    }
+}
+
+/* font color secondary */
+%font-color-secondary {
+    color: $color-red-secondary;
+}
+
+/* font color secondary */
+%font-color-secondary-hover {
+    &:hover {
+        color: $color-red-secondary;
+    }
+}
+
+/* border bottom color primary */
+%border-bottom-color-primary {
+    border-bottom-color: $color-red-primary;
+}
+
+/* border bottom color secondary hover */
+%border-bottom-color-secondary-hover {
+    &:hover {
+        border-color: $color-red-secondary;
+    }
+}
+
+%bg-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

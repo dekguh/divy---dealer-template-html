@@ -1,0 +1,55 @@
+.testimonial-item {
+    padding: 20px;
+    background-color: $color-white;
+    border: 1px solid $color-gray-secondary;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: .6s;
+
+    @extend %border-color-secondary-hover;
+
+    .testimonial-item-header {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid $color-gray-secondary;
+
+        text-align: center;
+
+        p {
+            font-style: italic;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .testimonial-item-footer {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        .testimonial-photo {
+            width: 60px;
+        }
+    }
+
+    .testimonial-photo-detail {
+        flex: 0 1 auto;
+        margin-right: 8px;
+    }
+
+    .testimonial-people-detail {
+        flex: 1 1 auto;
+    }
+
+    .testimonial-title {
+        margin-bottom: 4px;
+        font-weight: 600;
+    }
+
+    .testimonial-subtitle {
+        display: block;
+        @extend %font-color-primary;
+    }
+}

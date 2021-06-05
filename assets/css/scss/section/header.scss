@@ -1,0 +1,46 @@
+.header-content {
+    padding: 250px 0;
+}
+
+.header-title {
+    color: $color-white;
+    width: 50%;
+    text-align: center;
+    margin: 0 auto 30px auto;
+}
+
+.header-button {
+    text-align: center;
+}
+
+.header-page-content {
+    padding: 50px 0;
+
+    .header-title-page {
+        margin-bottom: 0;
+        color: $color-white;
+        text-align: center;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .header-content {
+        padding: 200px 0;
+    }
+
+    .header-title {
+        width: 80%;
+        font-size: $size-h2;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .header-content {
+        padding: 170px 0;
+    }
+
+    .header-title {
+        width: 100%;
+        font-size: $size-h3;
+    }
+}

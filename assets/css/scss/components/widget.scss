@@ -1,0 +1,48 @@
+.block-sidebar {
+    .sidebar-header {
+        margin-bottom: 15px;
+    }
+
+    .widget-divider {
+        width: 40px;
+        height: 4px;
+        @extend %bg-color-primary;
+    }
+
+    .sidebar-title {
+        margin-bottom: 0;
+        padding-bottom: 8px;
+    }
+}
+
+.widget-information {
+    padding: 20px;
+    border: 4px dashed $color-gray-primary;
+    border-radius: 15px;
+    transition: .6s;
+
+    &:hover {
+        @extend %border-color-primary;
+    }
+
+    .widget-photo-people {
+        position: relative;
+        height: 300px;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .widget-information-detail {
+        text-align: center;
+    }
+
+    .widget-information-subtitle {
+        display: block;
+        @extend %font-color-primary;
+        margin-bottom: 4px;
+    }
+
+    .widget-information-title {
+        margin-bottom: 15px;
+    }
+}
